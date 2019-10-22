@@ -1,0 +1,334 @@
+html,
+body {
+  height: 84%;
+}
+
+body {
+  width: 70% !important;
+  margin: auto !important;
+  margin-top: 3.5% !important;
+}
+
+.header {
+  margin: auto;
+  height: 21%;
+}
+
+/* CONTACT */
+
+.logo {
+  float: left;
+  max-width: 350px;
+  width: auto;
+  height: auto;
+}
+
+.contact {
+  float: right;
+  width: auto;
+  margin-top: 18px;
+  font-size: 134x;
+  font-weight: 600;
+}
+
+.diamond {
+  margin-top: 7px;
+  height: 13px;
+  width: 13px;
+}
+
+.diamond,
+.contact p {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.list-group-item {
+  border: none !important;
+  width: 150% !important;
+  margin-left: 20% !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+/* NAV BAR TABS*/
+
+.nav-item,
+.nav-item a {
+  font-weight: bold !important;
+  color: #00294b;
+  border-radius: 0 !important;
+}
+
+.fade,
+.tab-pane,
+.tab-content {
+  height: 100% !important;
+}
+
+.tab-content {
+  background: #fcfcfc;
+  border-left: #dee2e6 1px solid;
+  border-right: #dee2e6 1px solid;
+  border-bottom: #dee2e6 1px solid;
+  padding-bottom: 10px !important;
+}
+
+/* BIO */
+
+.bio-container {
+  height: 100%;
+  width: 100%;
+  padding: 2% 0;
+}
+
+.bio {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+}
+
+.bio-left {
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 15%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.bio-right {
+  float: left;
+  max-width: 85%;
+  height: 100%;
+  padding-left: 5%;
+  /*overflow-y: scroll !important;*/
+}
+
+.bio-photo {
+  position: relative;
+  top: 25%;
+  max-width: 100%;
+  float: left;
+}
+
+.bio-table {
+  float: left;
+}
+
+.bio-title {
+  font-size: 12px;
+  font-weight: bold;
+  padding: none !important;
+  vertical-align: top !important;
+}
+
+.bio-text {
+  padding-left: 5% !important;
+  font-size: 13px;
+  text-align: justify;
+}
+
+/* EDUCATION */
+
+.education-container {
+  height: 100%;
+  padding: 10% 0;
+}
+
+.education {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.left {
+  float: left;
+  width: 50%;
+  padding: 0 25px;
+}
+
+.right {
+  float: left;
+  width: 50%;
+  padding-left: 25px;
+}
+
+.remove-top-border {
+  border-top: none !important;
+}
+
+.edu-table {
+  max-width: 75%;
+}
+
+.edu-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.edu-text {
+  padding-left: 50px !important;
+}
+
+.lehigh-logo {
+  position: relative;
+  float: left;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: 12.5%;
+}
+
+.edu-slide-container {
+  width: 500px;
+  height: auto;
+  overflow: visible important;
+}
+
+.lehigh-photo {
+  max-width: 475px;
+  border-radius: 20px;
+  overflow: visible important;
+}
+
+.lehigh-date {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.lehigh-name {
+  float: left;
+  font-size: 32px;
+}
+
+.lehigh-address {
+  font-size: 16px;
+}
+
+.lehigh-degree {
+  font-size: 15px;
+}
+
+/* SKILLS */
+
+.skills-container {
+  height: 100%;
+  width: 100%;
+}
+
+.skills {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  padding-top: 4%;
+}
+
+.skills-left {
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+
+.skills-center,
+.skills-right {
+  float: left;
+  height: 100%;
+  width: 40%;
+  padding-left: 13%;
+}
+.skills-legend {
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.skills-level {
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.separator {
+  float: left;
+  margin: 0 10px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blueviolet;
+}
+
+.title {
+  margin-bottom: 5%;
+}
+
+.skills-title {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+}
+
+.os-table-container {
+  float: left;
+  width: 100%;
+  margin-top: 5% !important;
+}
+
+.lang-table-container,
+.skill-table-container {
+  float: left;
+  width: 50%;
+  margin-top: 5% !important;
+}
+
+.skills-table {
+  width: 100%;
+}
+
+.skills-image,
+.skills-text {
+  border: none !important;
+  vertical-align: middle !important;
+}
+
+.skills-text {
+  width: auto !important;
+  vertical-align: middle !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.skills-image {
+  max-width: 40px !important;
+  padding: 5% !important;
+}
+
+.skills-image img {
+  width: 25px;
+}
+
+/* RESUME */
+
+.resume-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.resume {
+  height: 100%;
+  width: 75%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.annotationLayer {
+  display: none !important;
+}
