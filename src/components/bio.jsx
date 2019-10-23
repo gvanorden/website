@@ -17,11 +17,11 @@ class Bio extends Component {
                 <tr>
                   <td className="bio-title remove-top-border">PHILOSOPHY</td>
                   <td className="bio-text remove-top-border">
-                    Work ethic must be driven by intellectual honesty and a
+                    Ones ethic must be driven by intellectual honesty and a
                     ceaseless will to self-educate. Mentality built from this
-                    ethic should recognize its cognitive ceiling as something
+                    ethic should recognize its prevailing cognitive ceiling as
                     temporary, existing only to be replaced by a deeper sense of
-                    acquired knowledge and understanding.
+                    knowledge and understanding.
                   </td>
                 </tr>
                 <tr>

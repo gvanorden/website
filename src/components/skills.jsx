@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import OperatingSystems from "../components/skills/operating-systems";
-import LangTableOne from "./skills/lang-table-one";
-import LangTableTwo from "./skills/lang-table-two";
-import SkillTableOne from "./skills/skill-table-one";
-import SkillTableTwo from "./skills/skill-table-two";
+import OsTable from "./skills/os-table";
+import SkillsTable from "./skills/skills-table";
+import LanguagesTable from "./skills/languages-table";
 
 class Skills extends Component {
   state = {};
@@ -12,20 +10,16 @@ class Skills extends Component {
       <div className="skills-container">
         <div className="skills">
           <div className="skills-left">
-            <div className="skills-title">OPERATING SYSTEMS</div>
-            <div className="os-table-container">
-              <OperatingSystems />
-            </div>
+            <div className="skills-title">LANGUAGES</div>
+            <LanguagesTable />
           </div>
           <div className="skills-center">
-            <div className="skills-title">LANGUAGES</div>
-            <LangTableOne />
-            <LangTableTwo />
+            <div className="skills-title">PLATFORMS</div>
+            <OsTable />
           </div>
           <div className="skills-right">
             <div className="skills-title">OTHER SKILLS</div>
-            <SkillTableOne />
-            <SkillTableTwo />
+            <SkillsTable />
           </div>
         </div>
       </div>
