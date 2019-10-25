@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Education from "./education";
+import Education from "./experience";
 import Bio from "./bio";
 import Skills from "./skills";
 import Resume from "./resume";
@@ -22,17 +22,22 @@ class Navbar extends Component {
         {
           id: 2,
           eventKey: "edu",
-          title: "EDUCATION",
+          title: "EXPERIENCE",
           component: <Education />
         },
-        { id: 3, eventKey: "exp", title: "EXPERIENCE", component: "" },
+
         {
           id: 4,
           eventKey: "skills",
           title: "SKILLS",
           component: <Skills />
         },
-        { id: 5, eventKey: "resume", title: "RESUME", component: <Resume /> }
+        {
+          id: 5,
+          eventKey: "resume",
+          title: "RESUME",
+          component: <Resume />
+        }
       ]
     };
 
