@@ -37,8 +37,8 @@ class Bio extends Component {
               </div>
               <p className="bio-text philo-text">
                 A work ethic must be guided by intellectual honesty and driven
-                through a strong will to self-educate. The mentality built from
-                this ethic should recognize its prevailing cognitive ceiling as
+                by a strong will to self-educate. The mentality built from this
+                ethic should recognize its prevailing cognitive ceiling as
                 temporary, existing only to be replaced by a deeper sense of
                 knowledge and understanding.
               </p>
@@ -85,9 +85,23 @@ class Bio extends Component {
                       </tr>
                     </tbody>
                   </Table>
+                  <Table className="edu-years-table">
+                    <tbody>
+                      <tr>
+                        <td className="degree-title">
+                          <b>YEARS</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="degree-text">
+                          <i>2005-2009</i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
                 </div>
               </div>
-              <div className="edu-slide-container">
+              {/*<div className="edu-slide-container">
                 <Fade {...slideProperties}>
                   {this.state.slideImages.map(slide => (
                     <div key={slide.id} className="lehigh-photo-container">
@@ -99,7 +113,7 @@ class Bio extends Component {
                     </div>
                   ))}
                 </Fade>
-              </div>
+              </div>*/}
             </div>
           </div>
           <div className="bio-background-container">
@@ -121,35 +135,35 @@ class Bio extends Component {
               <Table className="background-table">
                 <tbody>
                   <tr>
-                    <td>SEO Intern</td>
-                    <td>2012 - 2013</td>
-                    <td>0.5 years</td>
-                    <td>
-                      <i>The Rosenblum Law Firm</i>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Quality Assurance Engineer</td>
-                    <td>2013 - 2014</td>
-                    <td>1.5 years</td>
+                    <td>Pre-Sales / Integration Engineer</td>
+                    <td>2017-2019 (current)</td>
+                    <td>2.5 years</td>
                     <td>
                       <i>STEALTHbits Technologies Inc.</i>
                     </td>
                   </tr>
                   <tr>
                     <td>Post-Sales / Prof. Services Engineer</td>
-                    <td>2014 - 2017</td>
+                    <td>2014-2017</td>
                     <td>2.5 years</td>
                     <td>
                       <i>STEALTHbits Technologies Inc.</i>
                     </td>
                   </tr>
                   <tr>
-                    <td>Pre-Sales / Integration Engineer</td>
-                    <td>2017 - 2019 (current)</td>
-                    <td>2.5 years</td>
+                    <td>Quality Assurance Engineer</td>
+                    <td>2013-2014</td>
+                    <td>1.5 years</td>
                     <td>
                       <i>STEALTHbits Technologies Inc.</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>SEO Intern</td>
+                    <td>2012-2013</td>
+                    <td>0.5 years</td>
+                    <td>
+                      <i>The Rosenblum Law Firm</i>
                     </td>
                   </tr>
                 </tbody>

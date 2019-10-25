@@ -62,7 +62,7 @@ body {
   float: left;
   position: relative;
   width: 10%;
-  height: 87.5%;
+  height: 90%;
   margin-top: 2em;
   border-right: 1px dashed lightslategrey;
 }
@@ -82,15 +82,14 @@ body {
 }
 
 .tab-title {
-  margin-top: -0.25em;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   text-transform: uppercase;
   font-family: "Courier New", Courier, monospace !important;
 }
 
 .tab-title-letter {
-  line-height: 1.15 !important;
+  line-height: 1 !important;
 }
 
 .tab-content {
@@ -139,7 +138,8 @@ body {
 
 .bio-photo {
   width: 100%;
-  border-radius: 2em;
+  filter: grayscale(40%);
+  border-radius: 0.5em;
 }
 
 .bio-container {
@@ -209,21 +209,23 @@ body {
 }
 
 .degree-title {
-  padding: 0.25em 2em !important;
+  padding: 0.25em 1.75em !important;
   font-weight: bold;
   vertical-align: middle;
 }
 
 .degree-text {
-  font-size: 0.95vw;
-  padding: 0.25em 2em !important;
+  font-size: 0.9vw;
+  padding: 0.25em 1.75em !important;
   border: none !important;
 }
 
 .edu-table-container {
   float: left;
+  margin-left: 1em;
 }
 
+.edu-years-table,
 .edu-major-table,
 .edu-minor-table {
   float: left;
@@ -231,8 +233,7 @@ body {
   border: 1px solid #dee2e6;
   background: #fff;
   text-align: center;
-  margin-top: 0.25em;
-  margin-left: 1.5em;
+  margin: 0.35em 0 0 1em;
 }
 
 .edu-slide-container {
@@ -260,7 +261,7 @@ body {
 
 .background-table-container {
   width: 87.5%;
-  margin-left: 3.5%;
+  margin: 2.25em 0 0 3.5%;
 }
 
 .background-table {
