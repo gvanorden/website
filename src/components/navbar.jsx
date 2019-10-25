@@ -45,7 +45,12 @@ class Navbar extends Component {
   }
 
   splitTitle(title) {
-    let letters = title.split("");
+    let letters = [];
+    let titles = title.split("");
+
+    for (let i = 0; i < titles.length; i++) {
+      letters.push([i, titles[i]]);
+    }
     return letters;
   }
 
@@ -55,11 +60,13 @@ class Navbar extends Component {
         {this.state.tabs.map(tab => (
           <Tab key={tab.id} eventKey={tab.eventKey} title={tab.title}>
             <div className="tab-left">
-              <p className="tab-title">
+              <div className="tab-title">
                 {this.splitTitle(tab.title).map(letter => (
-                  <div className="tab-title-letter">{letter}</div>
+                  <p key={letter[0]} className="tab-title-letter">
+                    {letter[1]}
+                  </p>
                 ))}
-              </p>
+              </div>
             </div>
             <div className="tab-right">{tab.component}</div>
           </Tab>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import photo from "../images/bio-photo.png";
 import Table from "react-bootstrap/Table";
-import ListGroup from "react-bootstrap/ListGroup";
 import Fade from "react-slideshow-image/lib/components/slideshow/fade";
 import lehighLogo from "../images/lehigh-logo.png";
 import lehigh1 from "../images/lehigh-1.png";
@@ -14,10 +13,6 @@ const slideProperties = {
   infinite: true,
   indicators: true,
   arrows: true
-};
-
-const sliderStyle = {
-  position: "relative"
 };
 
 class Bio extends Component {
@@ -41,11 +36,11 @@ class Bio extends Component {
                 <p className="bio-title">PHILOSOPHY</p>
               </div>
               <p className="bio-text philo-text">
-                Ones ethic must be guided by intellectual honesty, driven by a
-                strong will to self-educate. The mentality built from this ethic
-                should recognize prevailing cognitive ceilings as temporary,
-                existing only to be replaced by a deeper sense of knowledge and
-                understanding.
+                A work ethic must be guided by intellectual honesty and driven
+                through a strong will to self-educate. The mentality built from
+                this ethic should recognize its prevailing cognitive ceiling as
+                temporary, existing only to be replaced by a deeper sense of
+                knowledge and understanding.
               </p>
             </div>
             <div className="separator"></div>
@@ -54,19 +49,6 @@ class Bio extends Component {
                 <p className="bio-title">EDUCATION</p>
               </div>
               <div className="bio-text">
-                <div className="edu-slide-container">
-                  <Fade {...slideProperties}>
-                    {this.state.slideImages.map(slide => (
-                      <div key={slide.id} className="lehigh-photo-container">
-                        <img
-                          className="lehigh-photo"
-                          src={slide.value}
-                          alt="Lehigh University"
-                        />
-                      </div>
-                    ))}
-                  </Fade>
-                </div>
                 <div className="edu-logo-container">
                   <img
                     className="edu-logo"
@@ -105,6 +87,19 @@ class Bio extends Component {
                   </Table>
                 </div>
               </div>
+              <div className="edu-slide-container">
+                <Fade {...slideProperties}>
+                  {this.state.slideImages.map(slide => (
+                    <div key={slide.id} className="lehigh-photo-container">
+                      <img
+                        className="lehigh-photo"
+                        src={slide.value}
+                        alt="Lehigh University"
+                      />
+                    </div>
+                  ))}
+                </Fade>
+              </div>
             </div>
           </div>
           <div className="bio-background-container">
@@ -121,17 +116,21 @@ class Bio extends Component {
                   built with React and uses AWS for web hosting.
                 </p>
               </div>
+            </div>
+            <div className="background-table-container">
               <Table className="background-table">
                 <tbody>
                   <tr>
-                    <td className="top-cell">SEO Intern</td>
-                    <td className="top-cell">0.5 years</td>
-                    <td className="top-cell">
+                    <td>SEO Intern</td>
+                    <td>2012 - 2013</td>
+                    <td>0.5 years</td>
+                    <td>
                       <i>The Rosenblum Law Firm</i>
                     </td>
                   </tr>
                   <tr>
                     <td>Quality Assurance Engineer</td>
+                    <td>2013 - 2014</td>
                     <td>1.5 years</td>
                     <td>
                       <i>STEALTHbits Technologies Inc.</i>
@@ -139,17 +138,17 @@ class Bio extends Component {
                   </tr>
                   <tr>
                     <td>Post-Sales / Prof. Services Engineer</td>
-                    <td>3 years</td>
+                    <td>2014 - 2017</td>
+                    <td>2.5 years</td>
                     <td>
                       <i>STEALTHbits Technologies Inc.</i>
                     </td>
                   </tr>
                   <tr>
-                    <td className="bottom-cell">
-                      Pre-Sales / Integration Engineer
-                    </td>
-                    <td className="bottom-cell">2 years</td>
-                    <td className="bottom-cell">
+                    <td>Pre-Sales / Integration Engineer</td>
+                    <td>2017 - 2019 (current)</td>
+                    <td>2.5 years</td>
+                    <td>
                       <i>STEALTHbits Technologies Inc.</i>
                     </td>
                   </tr>
