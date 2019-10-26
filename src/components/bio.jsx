@@ -39,7 +39,7 @@ class Bio extends Component {
             <p className="philo-title">PHILOSOPHY</p>
             <p className="philo-text">
               A work ethic must be guided by intellectual honesty and a strong will to self-educate.
-              A mentality built from this ethic should recognize the ceiling of its cognition as temporary,
+              The mentality built from this ethic should recognize its prevailing state as temporary,
               existing only to be replaced by a deeper sense of knowledge and understanding.
             </p>
           </div>
