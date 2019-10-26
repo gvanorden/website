@@ -5,7 +5,7 @@ import pdf from "../images/pdf/Gregg-Van-Orden-Resume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 class Resume extends Component {
-  state = { pageNumber: 1, scale: 1.5 };
+  state = { pageNumber: 1, scale: 1.3 };
 
   render() {
     return (

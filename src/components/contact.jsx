@@ -7,6 +7,7 @@ import address from "../images/contact-icons/address.png";
 
 class Contact extends Component {
   state = {};
+
   render() {
     return (
       <div className="header">
