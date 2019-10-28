@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import Education from "./experience";
+/*import Experience from "./experience";*/
 import Bio from "./bio";
 import Skills from "./skills";
 import Resume from "./resume";

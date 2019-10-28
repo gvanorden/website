@@ -1,33 +1,33 @@
 html,
 body {
   height: 90%;
-  width:100%;
-  font-size: .95vw;
+  width: 100%;
+  font-size: 0.95vw;
 }
 
 .top-main {
-  float:left;
-  width:100%;
-  margin-top:5vh;
+  float: left;
+  width: 100%;
+  margin-top: 5vh;
 }
 
 .bottom-main {
-  float:left;
-  width:100%;
-  height:100%;
-  margin-top:2.5vh;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-top: 2.5vh;
 }
 
 /* CONTACT*/
 
 .header {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
 }
 
 .logo-container {
-  float:left;
-  margin: -1vh 0 0 -1vw; 
+  float: left;
+  margin: -1vh 0 0 -1vw;
 }
 
 .logo {
@@ -36,11 +36,11 @@ body {
 }
 
 .contact-container {
-  float:right;
+  float: right;
 }
 
 .contact-list {
-  max-width:25vw !important;
+  max-width: 25vw !important;
 }
 
 .contact-image {
@@ -74,8 +74,8 @@ body {
 
 .tab-right {
   position: relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 90%;
   height: 100%;
 }
@@ -98,7 +98,7 @@ body {
 }
 
 .tab-content {
-  height:100% !important;
+  height: 100% !important;
   background: #fcfcfc;
   border-left: #dee2e6 1px solid;
   border-right: #dee2e6 1px solid;
@@ -108,105 +108,102 @@ body {
 /* BIO */
 
 .tab-left-biography {
-  float:left;
-  width:10%;
-  height:90%;
-  margin-top:2em;
-  border-right:.15em dashed #dee2e6;
+  float: left;
+  width: 10%;
+  height: 90%;
+  margin-top: 2em;
+  border-right: 0.15em dashed #dee2e6;
 }
 
 .tab-right-biography {
-  float:left;
-  width:90%;
-  height:95%;
-  margin-top:1em;
-  overflow-y:scroll;
+  float: left;
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .bio {
   height: 100%;
   width: 100%;
   margin: auto;
-  padding:1% 3.5% 0 3.5%;
+  padding: 1% 3.5% 0 3.5%;
 }
 
-#bio-top,
-#bio-mid {
-  float:left;
-  width:100%;
+#bio-top {
+  float: left;
+  width: 100%;
 }
 
 .bio-bottom {
-  float:left;
-  width:100%;
-  height:50%;
+  float: left;
+  width: 100%;
 }
 
 .philo-container,
 .edu-container {
-  float:left;
-  width:82.5%;
+  float: left;
+  width: 82.5%;
 }
 
 .philo-container {
-  padding:1em 0 1em 2em;
+  padding: 1em 0 1em 2em;
 }
 
 .edu-container {
-  padding-left:2em;
+  padding-left: 2em;
 }
 
 .bio-photo-container {
-  float:left;
-  width: 9.5vw;
-  padding:1.25em 0 2em 0;
+  float: left;
+  width: 15%;
+  padding: 2em 0;
 }
 
 .bio-photo {
-  float:left;
+  float: left;
   width: 100%;
   filter: grayscale(40%);
-  border-radius: .25em;
+  border-radius: 0.25em;
 }
 
 .philo-title,
 .edu-title {
-  float:left;
+  float: left;
   font-weight: bold;
-  margin-bottom:.75em !important;
+  margin-bottom: 0.75em !important;
 }
 
 .philo-text,
 .edu-text {
-  float:left;
+  float: left;
   width: 97.5%;
-  margin:0;
+  margin: 0;
   text-align: justify;
 }
 
 .edu-text {
-  margin-top:.1em;
+  margin-top: 0.1em;
 }
 
 .background-text {
-  float:left;
+  float: left;
   width: 95%;
-  margin-left:2em;
+  margin-left: 2em;
   text-align: justify;
 }
 
 .bio-slide-container {
-  float:left;
-  width:100px;
+  float: left;
+  width: 100px;
 }
 
 .edu-logo-container {
-  float:left;
-  width:100%;
+  float: left;
+  width: 100%;
 }
 
 .edu-logo {
-  float:left;
+  float: left;
   width: 15vw;
 }
 
@@ -216,20 +213,20 @@ body {
 
 .degree-table {
   float: left;
-  width:8vw;
+  width: 8vw;
   border: 1px solid #dee2e6;
   background: #fff;
   text-align: center;
-  margin:0;
-  margin-left:.5em;
+  margin: 0;
+  margin-left: 0.5em;
 }
 
 .degree-title,
 .degree-text {
   border: none !important;
-  padding:1px !important;
+  padding: 1px !important;
   vertical-align: middle;
-  font-size:.8vw;
+  font-size: 0.8vw;
 }
 
 .degree-title {
@@ -237,43 +234,42 @@ body {
 }
 
 .background-container {
-  float:left;
+  float: left;
 }
 
 .background-title {
-  padding-top:1em;
+  padding-top: 1em;
   font-weight: bold;
-  border-top:.15em dashed #dee2e6;
+  border-top: 0.15em dashed #dee2e6;
 }
 
 .background-table-container {
-  float:left;
+  float: left;
   width: 95%;
 }
 
 .background-table {
-  width:100%;
+  width: 100%;
   border: 1px solid #dee2e6;
   background: #fff;
-  margin-left:2em;
+  margin-left: 2em;
 }
 
 .background-table td {
   width: auto;
   border: none !important;
-  padding:.50em 0;
+  padding: 0.5em 0;
 }
 
 .background-table td:nth-child(1) {
   width: 35%;
-  font-size:.9vw;
+  font-size: 0.9vw;
   font-weight: 600;
-  padding:.50em 0 .50em .75em;
+  padding: 0.5em 0 0.5em 0.75em;
 }
 
 .background-table td:nth-child(2) {
   width: 25%;
-  
 }
 
 .background-table td:nth-child(3) {
@@ -287,28 +283,28 @@ body {
 /* SKILLS */
 
 .tab-left-skills {
-  float:left;
-  width:10%;
-  height:92.5%;
-  margin-top:2.5%;
-  border-right:.15em dashed #dee2e6;
+  float: left;
+  width: 10%;
+  height: 92.5%;
+  margin-top: 2.5%;
+  border-right: 0.15em dashed #dee2e6;
 }
 
 .tab-right-skills {
-  float:left;
-  width:90%;
-  height:100%;
-  margin-top:1%;
+  float: left;
+  width: 90%;
+  height: 100%;
+  margin-top: 1%;
 }
 
 .skills {
-  float:left;
+  float: left;
   position: relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  padding:1em 0 0 3em;
+  padding: 1.5em 0 0 3em;
 }
 
 .skills-legend {
@@ -339,101 +335,151 @@ body {
 .skills-left,
 .skills-center,
 .skills-right {
-  position:relative;
-  width:33%;
+  position: relative;
+  width: 33%;
 }
 
 .skills-left {
-  float:left;
-  top:0;
-  left:0;
+  float: left;
+  top: 0;
+  left: 0;
 }
 
 .skills-center {
-  float:left;
-  top:0;
-  left:0;
+  float: left;
+  top: 0;
+  left: 0;
 }
 
 .skills-right {
-  float:right;
-  top:0;
-  right:0;
+  float: right;
+  top: 0;
+  right: 0;
 }
 
-#language-container,
-#oss-container,
+#language-container {
+  position: relative;
+  width: 90%;
+}
+
+#language-container > .skills-list-one {
+  width: 52.5%;
+}
+
+#language-container > .skills-list-two {
+  width: 47.5%;
+}
+
+#platform-container {
+  position: relative;
+  width: 92.5%;
+}
+
+#platform-container > .skills-list-one {
+  width: 60%;
+}
+
+#platform-container > .skills-list-two {
+  width: 40%;
+}
+
 #skills-container {
-  position:relative;
+  position: relative;
+  width: 85%;
 }
 
-.skill-title {
-  width:100%;
-  padding:0 0 .75em .5em;
-  font-size:1.15vw;
-  margin:0 !important;
+#skills-container > .skills-list-one {
+  width: 55%;
 }
 
-.skill-list-one {
-  position:absolute;
-  top:2em;
-  left:2%;
-  width:50%;
+#skills-container > .skills-list-two {
+  width: 45%;
 }
 
-.skill-list-two {
-  position:absolute;
-  top:2em;
-  right:0;
-  width:50%;
+.skills-title {
+  width: 100%;
+  font-size: 1.25vw;
+  font-weight: 400;
+  margin: 0;
 }
 
-.skill-list {
-  padding:.75em 0;
+.skills-list-one {
+  position: absolute;
+  top: 3.5em;
+  left: 0;
+  border: 1px solid #dee2e6;
+  border-right: none !important;
+  padding-left: 1em;
+  background: #fff;
+}
+
+.skills-list-two {
+  position: absolute;
+  top: 3.5em;
+  right: 0;
+  width: 40%;
+  border: 1px solid #dee2e6;
+  border-left: none !important;
+  padding-left: 1em;
+  background: #fff;
 }
 
 .skills-image,
 .skills-text {
-  background:none !important;
-  border:none !important;
+  background: none !important;
+  border: none !important;
+}
+
+.skills-list-item {
+  padding: 1em 0 0 0 !important;
+  margin-bottom: 1.25em !important;
+  background: #fff !important;
+  border: none !important;
+  border-radius: 0 !important;
 }
 
 .skills-image {
-  padding: .25em 1em; 
-}
-.skills-text {
-  padding: 0 1em !important;
-  font-size:.85vw;
-  font-weight:400;
+  float: left;
 }
 
-.skills-image img {
-  height:3vh;
+.skills-image-img {
+  float: left;
+  height: 1.5em;
   width: auto;
+  margin: auto;
+}
+
+.skills-text {
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+  margin: 0;
+  font-size: 1vw;
+  font-weight: 400;
 }
 
 /* RESUME */
 
 .tab-left-resume {
-  float:left;
-  width:10%;
-  height:92.5%;
-  margin-top:2.5%;
-  border-right:.15em dashed #dee2e6;
+  float: left;
+  width: 10%;
+  height: 92.5%;
+  margin-top: 2.5%;
+  border-right: 0.15em dashed #dee2e6;
 }
 
 .tab-right-resume {
-  float:left;
-  width:90%;
-  height:100%;
-  padding-top:2.5%;
+  float: left;
+  width: 90%;
+  height: 100%;
+  padding-top: 2.5%;
 }
 
 .resume-container {
-  float:left;
+  float: left;
   height: 96.5%;
   width: 100%;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 canvas {

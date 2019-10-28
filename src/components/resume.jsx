@@ -8,25 +8,19 @@ class Resume extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { pageNumber: 1, scale: 1.25 };
+    this.state = { pageNumber: 1, scale: 1.75 };
 
     this.setScale = this.setScale.bind(this);
   }
 
-  setScale() {
-    if (window.innerWidth <= 893 && window.innerHeight > 414) {
-      this.setState({ scale: .75 })
-    }
-    else if (window.innerWidth <= 1200 && window.innerHeight > 414) {
-      this.setState({ scale: 1 })
-    }
-    else {
-      this.setState({ scale: 1.25 })
-    }
-  }
+  setScale() {}
 
   componentDidMount() {
-    window.addEventListener('resize', this.setScale)
+    window.addEventListener("resize", this.setScale);
+
+    if (window.innerWidth <= 2000) {
+      this.setState({ scale: 1.75 });
+    }
   }
 
   render() {

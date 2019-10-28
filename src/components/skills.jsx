@@ -1,10 +1,38 @@
 import React, { Component } from "react";
-import OssTable from "./skills/os-table";
-import SkillsTable from "./skills/skills-table";
-import LanguagesTable from "./skills/languages-table";
+import PlatformsTable from "./skills/platform-lists";
+import SkillsTable from "./skills/skill-lists";
+import LanguagesTable from "./skills/language-lists";
 
 class Skills extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+
+    this.state = { imageWidth: "" };
+
+    this.setImageWidth = this.setImageWidth.bind(this);
+  }
+
+  getImages(imageWidth) {
+    let images = document.getElementsByClassName("skills-image-img");
+
+    for (let i = 0; i < images.length; i++) {
+      this.images[i].childNodes[0].style.height = imageWidth;
+    }
+  }
+
+  setImageWidth() {
+    if (window.innerWidth < 425) {
+      this.setState({ imageWidth: "1" });
+    } else if (window.innerWidth < 775) {
+    } else if (window.innerWidth < 1025) {
+    } else {
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.setImageWidth);
+  }
+
   render() {
     return (
       <div className="skills">
@@ -12,7 +40,7 @@ class Skills extends Component {
           <LanguagesTable />
         </div>
         <div className="skills-center">
-          <OssTable />
+          <PlatformsTable />
         </div>
         <div className="skills-right">
           <SkillsTable />
