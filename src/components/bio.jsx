@@ -1,19 +1,19 @@
 import React, { Component } from "react";
 import photo from "../images/bio-photo.png";
 import Table from "react-bootstrap/Table";
-import Fade from "react-slideshow-image/lib/components/slideshow/fade";
+//import Fade from "react-slideshow-image/lib/components/slideshow/fade";
 import lehighLogo from "../images/lehigh-logo.png";
 import lehigh1 from "../images/lehigh-1.png";
 import lehigh2 from "../images/lehigh-2.png";
 import lehigh3 from "../images/lehigh-3.png";
 
-const slideProperties = {
+/*const slideProperties = {
   duration: 5000,
   transitionDuration: 2000,
   infinite: true,
   indicators: true,
   arrows: true
-};
+};*/
 
 class Bio extends Component {
   state = {
@@ -43,32 +43,32 @@ class Bio extends Component {
               existing only to be replaced by a deeper sense of knowledge and understanding.
             </p>
           </div>
-        </div>
-        <div className="edu-container">
-          <p className="edu-title">EDUCATION</p>
-          <div className="edu-text">
-            <div className="edu-logo-container">
-              <img
-                className="edu-logo"
-                src={lehighLogo}
-                alt="Lehigh Univserity Logo"
-              />
-              {this.state.degrees.map(degree => (
-                <Table key={degree[0]} className="degree-table">
-                  <tbody>
-                    <tr>
-                      <td className="degree-title">
-                        <b>{degree[0]}</b>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className="degree-text">
-                        <i>{degree[1]}</i>
-                      </td>
-                    </tr>
-                  </tbody>
-                </Table>
-              ))}
+          <div className="edu-container">
+            <p className="edu-title">EDUCATION</p>
+            <div className="edu-text">
+              <div className="edu-logo-container">
+                <img
+                  className="edu-logo"
+                  src={lehighLogo}
+                  alt="Lehigh Univserity Logo"
+                />
+                {this.state.degrees.map(degree => (
+                  <Table key={degree[0]} className="degree-table">
+                    <tbody>
+                      <tr>
+                        <td className="degree-title">
+                          <b>{degree[0]}</b>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td className="degree-text">
+                          <i>{degree[1]}</i>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -96,47 +96,47 @@ class Bio extends Component {
               front and back-end web development. For instance, this site is
               built with React and uses AWS for web hosting.
             </p>
-          </div>
-          <div className="background-table-container">
-            <Table className="background-table">
-              <tbody>
-                <tr>
-                  <td>Pre-Sales / Integration Engineer</td>
-                  <td>2017-2019 (current)</td>
-                  <td>2.5 years</td>
-                  <td>
-                    <i>STEALTHbits Technologies Inc.</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Post-Sales / Prof. Services Engineer</td>
-                  <td>2014-2017</td>
-                  <td>2.5 years</td>
-                  <td>
-                    <i>STEALTHbits Technologies Inc.</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Quality Assurance Engineer</td>
-                  <td>2013-2014</td>
-                  <td>1.5 years</td>
-                  <td>
-                    <i>STEALTHbits Technologies Inc.</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>SEO Intern</td>
-                  <td>2012-2013</td>
-                  <td>0.5 years</td>
-                  <td>
-                    <i>The Rosenblum Law Firm</i>
-                  </td>
-                </tr>
-              </tbody>
-            </Table>
+            <div className="background-table-container">
+              <Table className="background-table">
+                <tbody>
+                  <tr>
+                    <td>Solutions Engineer</td>
+                    <td>2017-2019 (current)</td>
+                    <td>2.5 years</td>
+                    <td>
+                      <i>STEALTHbits</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Professional Services Engineer</td>
+                    <td>2014-2017</td>
+                    <td>2.5 years</td>
+                    <td>
+                      <i>STEALTHbits</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Quality Assurance Engineer</td>
+                    <td>2013-2014</td>
+                    <td>1.5 years</td>
+                    <td>
+                      <i>STEALTHbits</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>SEO Intern</td>
+                    <td>2012-2013</td>
+                    <td>0.5 years</td>
+                    <td>
+                      <i>Rosenblum Law Firm</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
           </div>
         </div>
-      </div >
+      </div>
     );
   }
 }

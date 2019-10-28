@@ -15,17 +15,16 @@ class Navbar extends Component {
       tabs: [
         {
           id: 1,
-          eventKey: "bio",
+          eventKey: "biography",
           title: "BIOGRAPHY",
           component: <Bio />
         },
-        {
+        /*{
           id: 2,
-          eventKey: "edu",
+          eventKey: "experience",
           title: "EXPERIENCE",
           component: <Education />
-        },
-
+        },*/
         {
           id: 4,
           eventKey: "skills",
@@ -59,7 +58,7 @@ class Navbar extends Component {
       <Tabs justify defaultActiveKey={this.state.tabs[0].eventKey}>
         {this.state.tabs.map(tab => (
           <Tab key={tab.id} eventKey={tab.eventKey} title={tab.title}>
-            <div className="tab-left">
+            <div className={"tab-left-" + tab.eventKey}>
               <div className="tab-title">
                 {this.splitTitle(tab.title).map(letter => (
                   <p key={letter[0]} className="tab-title-letter">
@@ -68,7 +67,7 @@ class Navbar extends Component {
                 ))}
               </div>
             </div>
-            <div className="tab-right">{tab.component}</div>
+            <div className={"tab-right-" + tab.eventKey}>{tab.component}</div>
           </Tab>
         ))}
       </Tabs>

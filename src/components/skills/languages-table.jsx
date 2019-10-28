@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Table from "react-bootstrap/Table";
+import ListGroup from "react-bootstrap/ListGroup"
 import mssql from "../../images/language-logos/mssql.png";
 import mysql from "../../images/language-logos/mysql.png";
 import postgresql from "../../images/language-logos/postgresql.png";
@@ -13,12 +13,12 @@ import node from "../../images/language-logos/node.png";
 import net from "../../images/language-logos/net.png";
 import java from "../../images/language-logos/java.png";
 
-class LanguagesTable extends Component {
+class skillsTable extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      languages: [
+      langOne: [
         { id: 1, img: mssql, text: "MS SQL", class: "skills-text red" },
         { id: 2, img: mysql, text: "MySQL", class: "skills-text red" },
         {
@@ -35,6 +35,8 @@ class LanguagesTable extends Component {
         },
         { id: 5, img: net, text: "C#\\.NET", class: "skills-text blue" },
         { id: 6, img: java, text: "Java", class: "skills-text blue" },
+      ],
+      langTwo: [
         { id: 7, img: python, text: "Python", class: "skills-text" },
         { id: 8, img: node, text: "Node", class: "skills-text" },
         { id: 9, img: react, text: "React", class: "skills-text" },
@@ -43,68 +45,31 @@ class LanguagesTable extends Component {
         { id: 12, img: css, text: "CSS", class: "skills-text" }
       ]
     };
-
-    this.languageType = this.languageType.bind(this);
-    this.getImage = this.getImage.bind(this);
-    this.getText = this.getText.bind(this);
-    this.getClass = this.getClass.bind(this);
-  }
-
-  languageType(x) {
-    let languageType = x % 2 ? true : false;
-    return languageType;
-  }
-
-  getImage(x) {
-    return this.state.languages[x].img;
-  }
-
-  getText(x) {
-    return this.state.languages[x].text;
-  }
-
-  getClass(x) {
-    return this.state.languages[x].class;
   }
 
   render() {
-    const { languages } = this.state;
-
     return (
-      <div className="languages-table-container">
-        <Table className="skills-table">
-          <tbody>
-            {languages.map(language => (
-              <tr key={language.id} className="skills-row">
-                {this.languageType(language.id) && (
-                  <React.Fragment>
-                    <td className="skills-image">
-                      <img
-                        src={this.getImage(language.id)}
-                        alt={this.getText(language.id)}
-                      />
-                    </td>
-                    <td className={this.getClass(language.id)}>
-                      {this.getText(language.id)}
-                    </td>
-                    <td className="skills-image">
-                      <img
-                        src={this.getImage(language.id - 1)}
-                        alt={this.getText(language.id - 1)}
-                      />
-                    </td>
-                    <td className={this.getClass(language.id - 1)}>
-                      {this.getText(language.id - 1)}
-                    </td>
-                  </React.Fragment>
-                )}
-              </tr>
-            ))}
-          </tbody>
-        </Table>
+      <div id="language-container">
+        <p className="skill-title">LANGUAGES</p>
+        <div className="skill-list-one">
+          {this.state.langOne.map(skill => (
+            <ListGroup key={skill.id} className="skill-list">
+              <ListGroup.Item className="skills-image"><img src={skill.img} alt={skill.text} /></ListGroup.Item>
+              <ListGroup.Item className={skill.class}>{skill.text}</ListGroup.Item>
+            </ListGroup>
+          ))}
+        </div>
+        <div className="skill-list-two">
+          {this.state.langTwo.map(skill => (
+            <ListGroup key={skill.id} className="skill-list">
+              <ListGroup.Item className="skills-image"><img src={skill.img} alt={skill.text} /></ListGroup.Item>
+              <ListGroup.Item className={skill.class}>{skill.text}</ListGroup.Item>
+            </ListGroup>
+          ))}
+        </div>
       </div>
     );
   }
 }
 
-export default LanguagesTable;
+export default skillsTable;
