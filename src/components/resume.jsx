@@ -13,14 +13,31 @@ class Resume extends Component {
     this.setScale = this.setScale.bind(this);
   }
 
-  setScale() {}
-
-  componentDidMount() {
-    window.addEventListener("resize", this.setScale);
-
-    if (window.innerWidth <= 2000) {
+  setScale() {
+    if (window.innerWidth <= 700) {
+      this.setState({ scale: 0.55 });
+    }
+    else if (window.innerWidth <= 900) {
+      this.setState({ scale: 0.75 });
+    }
+    else if (window.innerWidth <= 1224) {
+      this.setState({ scale: 1 });
+    }
+    else if (window.innerWidth <= 1500) {
+      this.setState({ scale: 1.25 });
+    }
+    else if (window.innerWidth <= 2000) {
       this.setState({ scale: 1.75 });
     }
+    else {
+      this.setState({ scale: 2 });
+    }
+  }
+
+  componentDidMount() {
+    this.setScale();
+
+    window.addEventListener("resize", this.setScale);
   }
 
   render() {

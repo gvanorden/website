@@ -37,10 +37,10 @@ class Skills extends Component {
     return (
       <div className="skills">
         <div className="skills-left">
-          <LanguagesTable />
-        </div>
-        <div className="skills-center">
           <PlatformsTable />
+        </div>
+        <div className="skills-mid">
+          <LanguagesTable />
         </div>
         <div className="skills-right">
           <SkillsTable />

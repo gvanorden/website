@@ -20,16 +20,13 @@ class SkillsTable extends Component {
         { id: 2, img: rest, text: "REST", class: "skills-text" },
         { id: 3, img: json, text: "JSON", class: "skills-text" },
         { id: 4, img: xml, text: "XML", class: "skills-text" },
-        { id: 5, img: aws, text: "AWS", class: "skills-text blue" },
-        { id: 6, img: "", text: "", class: "skills-text" }
+        { id: 5, img: dns, text: "DNS", class: "skills-text" },
+        { id: 6, img: aws, text: "AWS", class: "skills-text blue" }
       ],
       skillTwo: [
-        { id: 1, img: git, text: "GitHub", class: "skills-text" },
-        { id: 2, img: cmd, text: "CMD", class: "skills-text" },
-        { id: 3, img: tcpip, text: "TCP/IP", class: "skills-text" },
-        { id: 4, img: dns, text: "DNS", class: "skills-text" },
-        { id: 5, img: "", text: "", class: "skills-text" },
-        { id: 6, img: "", text: "", class: "skills-text" }
+        { id: 1, img: cmd, text: "CMD", class: "skills-text" },
+        { id: 2, img: tcpip, text: "TCP/IP", class: "skills-text" },
+        { id: 3, img: git, text: "GitHub", class: "skills-text" }
       ]
     };
   }
@@ -38,7 +35,7 @@ class SkillsTable extends Component {
     return (
       <div id="skills-container">
         <p className="skills-title">OTHER SKILLS</p>
-        <div className="skills-list-one">
+        <div className="skills-list-container">
           {this.state.skillOne.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">
@@ -52,7 +49,7 @@ class SkillsTable extends Component {
             </ListGroup>
           ))}
         </div>
-        <div className="skills-list-two">
+        <div className="skills-list-container">
           {this.state.skillTwo.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">

@@ -51,7 +51,7 @@ class skillsTable extends Component {
     return (
       <div id="language-container">
         <p className="skills-title">LANGUAGES</p>
-        <div className="skills-list-one">
+        <div className="language-list-container">
           {this.state.langOne.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">
@@ -65,7 +65,7 @@ class skillsTable extends Component {
             </ListGroup>
           ))}
         </div>
-        <div className="skills-list-two">
+        <div className="language-list-container">
           {this.state.langTwo.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">
