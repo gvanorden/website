@@ -7,24 +7,35 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      width: "70vw",
-      height: "70vh"
+      width: "",
+      height: ""
     };
 
     this.setDimensions = this.setDimensions.bind(this);
   }
 
   setDimensions() {
-    if (window.innerWidth <= 812 && window.innerHeight > 414) {
-      this.setState({ width: "80vw", height: "37.5vh" });
-    } else if (window.innerWidth <= 1024 && window.innerHeight > 414) {
-      this.setState({ width: "80vw", height: "50vh" });
+    let html = document.getElementsByTagName("html")[0];
+
+    if (window.innerWidth < 1000) {
+      this.setState({ width: "90vw", height: "35vh" });
+      //html.style.fontSize = "1.1vw";
+      console.log(window.innerWidth + "        1");
+    } else if (window.innerWidth < 1275) {
+      this.setState({ width: "85vw", height: "50vh" });
+      console.log(window.innerWidth + "        2");
+    } else if (window.innerWidth < 1625) {
+      this.setState({ width: "80vw", height: "57.5vh" });
+      console.log(window.innerWidth);
     } else {
-      this.setState({ width: "70vw", height: "70vh" });
+      this.setState({ width: "75vw", height: "70vh" });
+      console.log(window.innerWidth);
     }
   }
 
   componentDidMount() {
+    this.setDimensions();
+
     window.addEventListener("resize", this.setDimensions);
   }
 
@@ -34,8 +45,7 @@ class Main extends Component {
         className="main"
         style={{
           width: this.state.width,
-          height: this.state.height,
-          margin: "auto"
+          height: this.state.height
         }}
       >
         <div className="top-main">

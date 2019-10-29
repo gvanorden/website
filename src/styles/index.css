@@ -1,19 +1,32 @@
+html {
+  font-size: 0.95vw;
+}
+
 html,
 body {
   height: 90%;
   width: 100%;
-  font-size: 0.95vw;
+
+  margin-top: 2.5vh;
 }
 
-.top-main {
+.root,
+.main {
+  height: 100%;
+}
+
+.main {
+  margin: auto;
+}
+
+.top-main,
+.bottom-main {
   float: left;
+  margin: auto;
   width: 100%;
-  margin-top: 5vh;
 }
 
 .bottom-main {
-  float: left;
-  width: 100%;
   height: 100%;
   margin-top: 2.5vh;
 }
@@ -31,7 +44,7 @@ body {
 }
 
 .logo {
-  width: 20vw;
+  width: 12.5vw;
   height: auto;
 }
 
@@ -146,17 +159,19 @@ body {
 }
 
 .philo-container {
+  width: 87.5%;
   padding: 1em 0 1em 2em;
 }
 
 .edu-container {
-  padding-left: 2em;
+  width: 87.5%;
+  padding: 1em 0 0 2em;
 }
 
 .bio-photo-container {
   float: left;
-  width: 15%;
-  padding: 2em 0;
+  width: 12.5%;
+  padding: 2em 0 1.5em 0;
 }
 
 .bio-photo {
@@ -170,19 +185,22 @@ body {
 .edu-title {
   float: left;
   font-weight: bold;
-  margin-bottom: 0.75em !important;
+}
+
+.philo-title {
+  margin-top: 1em;
 }
 
 .philo-text,
 .edu-text {
   float: left;
-  width: 97.5%;
-  margin: 0;
+  width: 82.5%;
+  margin: 1em 0 0 2em;
   text-align: justify;
 }
 
 .edu-text {
-  margin-top: 0.1em;
+  margin-top: 0.5em;
 }
 
 .background-text {
@@ -205,6 +223,7 @@ body {
 .edu-logo {
   float: left;
   width: 15vw;
+  margin-right: 0.5em;
 }
 
 .degree-table-container {
@@ -218,7 +237,7 @@ body {
   background: #fff;
   text-align: center;
   margin: 0;
-  margin-left: 0.5em;
+  margin-left: 0.75em;
 }
 
 .degree-title,
@@ -294,29 +313,26 @@ body {
   float: left;
   width: 90%;
   height: 100%;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }
 
 .skills {
   float: left;
   height: 100%;
-  width:100%;
+  width: 100%;
   padding: 2em 0 0 2em;
 }
 
-.skills-left {
-  float:left;
-  width:25%;
+.skills-top {
+  float: left;
+  width: 100%;
 }
 
-.skills-mid {
-  float:left;
-  width:40%;
-}
-
+.skills-left,
+.skills-mid,
 .skills-right {
-  float:left;
-  width:35%
+  float: left;
+  width: 33%;
 }
 
 .skills-legend {
@@ -344,67 +360,91 @@ body {
   color: blueviolet;
 }
 
-#platform-container,
-#language-container,
-#skills-container {
-  float:left;
-  width:100%;
+.skills-container {
+  float: left;
+  width: 100%;
 }
 
 .skills-title {
-  float:left;
+  float: left;
   width: 100%;
   font-size: 1.25vw;
   font-weight: 400;
   margin: 0;
 }
 
-.platform-list-container {
-  float:left;
-  width:100%;
-  margin-top:1em;
+.platforms-list-container {
+  float: left;
+  min-width: 64.25%;
+  margin: 1em 0 2em 0;
+  background: #fff;
+  border: 1px solid #dee2e6;
 }
 
-.language-list-container {
-  float:left;
-  width:45%;
-  padding:0 2.5%;
-  margin-top:1em;
+.platforms-list {
+  float: left;
+  padding: 0.75em 2em 0.75em 1em;
+  font-size: 0.9vw;
 }
 
 .skills-list-container {
-  float:left;
-  width:45%;
-  padding:0 2.5%;
-  margin-top:1em;
+  float: left;
+  width: 100%;
+}
+
+.skills-list-container-one,
+.skills-list-container-two {
+  float: left;
+  margin-top: 1em;
+  background: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.skills-list-container-one,
+.skills-list-container-two {
+  width: 47.5%;
+}
+
+.skills-list-container-one {
+  float: left;
+  margin-top: 1em;
+  border-right: none !important;
+}
+
+.skills-list-container-two {
+  float: left;
+  margin-top: 1em;
+  border-left: none !important;
 }
 
 .skills-list {
-  float:left;
-  width:100%;
+  float: left;
+  width: 100%;
+  padding: 1em 0 1em 1em;
+  font-size: 0.9vw;
 }
 
 .skills-list-item {
-  width:100% !important;
-  background:none !important;
+  width: 100% !important;
+  padding: 0 !important;
+  background: none !important;
   border: none !important;
   border-radius: 0 !important;
-  padding:.75em;
 }
 
 .skills-image,
 .skills-text {
-  float:left;
+  float: left;
   background: none !important;
   border: none !important;
 }
 
 .skills-text {
-  margin-left:1em;
+  margin: 0 0 0 0.75em !important;
 }
 
 .skills-image-img {
-  float:left;
+  float: left;
   height: 1.5em;
   width: auto;
   margin: auto;

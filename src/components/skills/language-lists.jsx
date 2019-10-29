@@ -13,45 +13,46 @@ import node from "../../images/language-logos/node.png";
 import net from "../../images/language-logos/net.png";
 import java from "../../images/language-logos/java.png";
 
-class skillsTable extends Component {
+class Languages extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       langOne: [
         { id: 1, img: mssql, text: "MS SQL", class: "skills-text red" },
-        { id: 2, img: mysql, text: "MySQL", class: "skills-text red" },
+
         {
-          id: 3,
+          id: 2,
           img: postgresql,
           text: "PostgreSQL",
           class: "skills-text red"
         },
+        { id: 3, img: python, text: "Python", class: "skills-text" },
+        { id: 4, img: node, text: "Node", class: "skills-text" },
+        { id: 5, img: html, text: "HTML", class: "skills-text" },
+        { id: 6, img: net, text: "C#/.NET", class: "skills-text blue" }
+      ],
+      langTwo: [
+        { id: 1, img: mysql, text: "MySQL", class: "skills-text red" },
         {
-          id: 4,
+          id: 2,
           img: powershell,
           text: "PowerShell",
           class: "skills-text red"
         },
-        { id: 5, img: net, text: "C#\\.NET", class: "skills-text blue" },
+        { id: 3, img: javascript, text: "JavaScript", class: "skills-text" },
+        { id: 4, img: react, text: "React", class: "skills-text" },
+        { id: 5, img: css, text: "CSS", class: "skills-text" },
         { id: 6, img: java, text: "Java", class: "skills-text blue" }
-      ],
-      langTwo: [
-        { id: 7, img: python, text: "Python", class: "skills-text" },
-        { id: 8, img: node, text: "Node", class: "skills-text" },
-        { id: 9, img: react, text: "React", class: "skills-text" },
-        { id: 10, img: javascript, text: "JavaScript", class: "skills-text" },
-        { id: 11, img: html, text: "HTML", class: "skills-text" },
-        { id: 12, img: css, text: "CSS", class: "skills-text" }
       ]
     };
   }
 
   render() {
     return (
-      <div id="language-container">
+      <div className="skills-container">
         <p className="skills-title">LANGUAGES</p>
-        <div className="language-list-container">
+        <div className="skills-list-container-one">
           {this.state.langOne.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">
@@ -65,7 +66,7 @@ class skillsTable extends Component {
             </ListGroup>
           ))}
         </div>
-        <div className="language-list-container">
+        <div className="skills-list-container-two">
           {this.state.langTwo.map(skill => (
             <ListGroup key={skill.id} className="skills-list">
               <ListGroup.Item className="skills-list-item">
@@ -84,4 +85,4 @@ class skillsTable extends Component {
   }
 }
 
-export default skillsTable;
+export default Languages;

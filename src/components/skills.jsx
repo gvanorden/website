@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import PlatformsTable from "./skills/platform-lists";
-import SkillsTable from "./skills/skill-lists";
-import LanguagesTable from "./skills/language-lists";
+import Languages from "./skills/language-lists";
+import Applications from "./skills/application-lists";
+import OtherSkills from "./skills/other-skill-lists";
+import Platforms from "./skills/platform-lists";
 
 class Skills extends Component {
   constructor(props) {
@@ -36,14 +37,17 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills">
+        <div className="skills-top">
+          <Platforms />
+        </div>
         <div className="skills-left">
-          <PlatformsTable />
+          <Languages />
         </div>
         <div className="skills-mid">
-          <LanguagesTable />
+          <Applications />
         </div>
         <div className="skills-right">
-          <SkillsTable />
+          <OtherSkills />
         </div>
       </div>
     );
