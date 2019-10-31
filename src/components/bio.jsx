@@ -8,8 +8,8 @@ import lehigh2 from "../images/lehigh-2.png";
 import lehigh3 from "../images/lehigh-3.png";
 
 const slideProperties = {
-  duration: 3500,
-  transitionDuration: 2000,
+  duration: 4000,
+  transitionDuration: 2500,
   infinite: true
 };
 
@@ -21,9 +21,9 @@ class Bio extends Component {
       { id: 3, value: lehigh3 }
     ],
     degrees: [
-      ['YEARS', '2005-2009'],
-      ['MAJOR', 'Marketing'],
-      ['MINOR', 'Psychology']
+      ["YEARS", "2005-2009"],
+      ["MAJOR", "Marketing"],
+      ["MINOR", "Psychology"]
     ]
   };
   render() {
@@ -36,9 +36,10 @@ class Bio extends Component {
           <div className="philo-container">
             <p className="philo-title">PHILOSOPHY</p>
             <p className="philo-text">
-              A work ethic must be guided by intellectual honesty and a strong will to self-educate.
-              The mentality built from this ethic should recognize its prevailing state as temporary,
-              existing only to be replaced by a deeper sense of knowledge and understanding.
+              A work ethic must be guided by intellectual honesty and a strong
+              will to self-educate. The mentality built from this ethic should
+              recognize its prevailing state as temporary, existing only to be
+              replaced by a deeper sense of knowledge and understanding.
             </p>
           </div>
           <div className="edu-container">
@@ -50,6 +51,8 @@ class Bio extends Component {
                   src={lehighLogo}
                   alt="Lehigh Univserity Logo"
                 />
+              </div>
+              <div className="degree-table-container">
                 {this.state.degrees.map(degree => (
                   <Table key={degree[0]} className="degree-table">
                     <tbody>
@@ -67,19 +70,19 @@ class Bio extends Component {
                   </Table>
                 ))}
               </div>
-            </div>
-            <div className="bio-slide-container">
-              <Fade {...slideProperties}>
-                {this.state.slideImages.map(slide => (
-                  <div key={slide.id} className="slide-photo-container">
-                    <img
-                      className="slide-photo"
-                      src={slide.value}
-                      alt="Lehigh University"
-                    />
-                  </div>
-                ))}
-              </Fade>
+              <div className="bio-slide-container">
+                <Fade {...slideProperties}>
+                  {this.state.slideImages.map(slide => (
+                    <div key={slide.id} className="slide-photo-container">
+                      <img
+                        className="slide-photo"
+                        src={slide.value}
+                        alt="Lehigh University"
+                      />
+                    </div>
+                  ))}
+                </Fade>
+              </div>
             </div>
           </div>
         </div>
@@ -87,11 +90,11 @@ class Bio extends Component {
           <div className="background-container">
             <p className="background-title">BACKGROUND</p>
             <p className="background-text">
-              I build data & analytic solutions for both small-scale and
-              Fortune 500 companies using SQL, PowerShell, Python, C#/.NET
-              and STEALTHbits products. I've also acquired skillsets in both
-              front and back-end web development. For instance, this site is
-              built with React and uses AWS for web hosting.
+              I build data & analytic solutions for both small-scale and Fortune
+              500 companies using SQL, PowerShell, Python, C#/.NET and
+              STEALTHbits products. I've also acquired skillsets in both front
+              and back-end web development. For instance, this site is built
+              with React and uses AWS for web hosting.
             </p>
             <div className="background-table-container">
               <Table className="background-table">

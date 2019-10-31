@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Contact from "./contact";
 import Navbar from "./navbar";
-import { get } from "https";
 
 class Main extends Component {
   constructor(props) {
@@ -28,7 +27,7 @@ class Main extends Component {
       this.setState({ width: "80vw", height: "67.5vh" });
       console.log(window.innerWidth);
     } else {
-      this.setState({ width: "75vw", height: "72.5vh" });
+      this.setState({ width: "75vw", height: "70vh" });
       console.log(window.innerWidth);
     }
   }
