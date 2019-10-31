@@ -29,7 +29,7 @@ class Platforms extends Component {
   render() {
     return (
       <div className="skills-container">
-        <p className="skills-title">PLATFORMS</p>
+        <p className="platforms-title">PLATFORMS</p>
         <div className="platforms-list-container">
           {this.state.platforms.map(skill => (
             <ListGroup key={skill.id} className="platforms-list">

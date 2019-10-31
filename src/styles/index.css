@@ -1,13 +1,12 @@
 html {
-  font-size: 0.95vw;
+  font-size: 1vw;
+  margin-top:2em;
 }
 
 html,
 body {
   height: 90%;
   width: 100%;
-
-  margin-top: 2.5vh;
 }
 
 .root,
@@ -28,23 +27,23 @@ body {
 
 .bottom-main {
   height: 100%;
-  margin-top: 2.5vh;
+  margin-top: 2.5em;
 }
 
 /* CONTACT*/
 
 .header {
+  float:left;
   width: 100%;
   height: auto;
 }
 
 .logo-container {
   float: left;
-  margin: -1vh 0 0 -1vw;
 }
 
 .logo {
-  width: 20vw;
+  width:15vw;
   height: auto;
 }
 
@@ -63,11 +62,16 @@ body {
 
 .contact-list > .list-group-item {
   font-size: 0.8vw;
-  padding: 0.75em !important;
+  padding: .85em !important;
   border-radius: 0 !important;
 }
 
 /* NAV BAR TABS*/
+
+.active {
+  background: #fcfcfc !important;
+  border-bottom: 1px solid #fcfcfc !important;
+}
 
 .nav-item,
 .nav-item a {
@@ -100,7 +104,7 @@ body {
 }
 
 .tab-title {
-  font-size: 2.25vw;
+  font-size: 2vw;
   text-align: center;
   text-transform: uppercase;
   font-family: "Courier New", Courier, monospace !important;
@@ -123,8 +127,8 @@ body {
 .tab-left-biography {
   float: left;
   width: 10%;
-  height: 90%;
-  margin-top: 2em;
+  height: 91%;
+  margin-top: 1.75%;
   border-right: 0.15em dashed #dee2e6;
 }
 
@@ -156,63 +160,61 @@ body {
 .edu-container {
   float: left;
   width: 82.5%;
-}
-
-.philo-container {
-  width: 87.5%;
-  padding: 1em 0 1em 2em;
-}
-
-.edu-container {
-  width: 87.5%;
-  padding: 1em 0 0 2em;
+  padding:.75em 0 0 2em;
 }
 
 .bio-photo-container {
   float: left;
-  width: 12.5%;
-  padding: 2em 0 1.5em 0;
+  width: 16%;
+  padding:1.25em 0 1em 0;
 }
 
 .bio-photo {
   float: left;
   width: 100%;
   filter: grayscale(40%);
-  border-radius: 0.25em;
+  border-radius: 0.5em;
 }
 
 .philo-title,
 .edu-title {
   float: left;
-  font-weight: bold;
-}
-
-.philo-title {
-  margin-top: 1em;
+  width:100%;
+  font-weight: 600;
+  margin-bottom:.5em !important;
 }
 
 .philo-text,
 .edu-text {
   float: left;
-  width: 82.5%;
-  margin: 1em 0 0 2em;
   text-align: justify;
+  margin-bottom:.75em !important;
+  padding-left:1em;
+}
+
+.philo-text {
+  width:100%;
 }
 
 .edu-text {
-  margin-top: 0.5em;
-}
-
-.background-text {
-  float: left;
-  width: 95%;
-  margin-left: 2em;
-  text-align: justify;
+  width:82.5%;
+  margin-top:.5em;
 }
 
 .bio-slide-container {
   float: left;
-  width: 100px;
+  width:17.5%;
+  margin-top:-3.5%;
+}
+
+.slide-photo-container {
+  float:left;
+  width:100%;
+}
+
+.slide-photo {
+  width:80%;
+  border-radius:.5em;
 }
 
 .edu-logo-container {
@@ -222,7 +224,7 @@ body {
 
 .edu-logo {
   float: left;
-  width: 15vw;
+  width: 45%;
   margin-right: 0.5em;
 }
 
@@ -232,24 +234,27 @@ body {
 
 .degree-table {
   float: left;
-  width: 8vw;
+  width:auto;
+  min-width:12.5%;
   border: 1px solid #dee2e6;
   background: #fff;
   text-align: center;
-  margin: 0;
-  margin-left: 0.75em;
+  margin-left: 1em !important;
 }
 
 .degree-title,
 .degree-text {
   border: none !important;
-  padding: 1px !important;
-  vertical-align: middle;
-  font-size: 0.8vw;
+  font-size: 0.85vw;
 }
 
 .degree-title {
+  padding:.5em 1em .25em 1em !important;
   font-weight: 500;
+}
+
+.degree-text {
+  padding:.25em 1em .5em 1em !important;
 }
 
 .background-container {
@@ -257,27 +262,36 @@ body {
 }
 
 .background-title {
+  width:97.5%;
   padding-top: 1em;
+  margin-bottom:.5em !important;
   font-weight: bold;
   border-top: 0.15em dashed #dee2e6;
 }
 
+.background-text {
+  float: left;
+  width: 97.5%;
+  padding-left:1em;
+  text-align: justify;
+}
+
 .background-table-container {
   float: left;
-  width: 95%;
+  width: 97.5%;
+  padding-left:1em;
 }
 
 .background-table {
   width: 100%;
   border: 1px solid #dee2e6;
   background: #fff;
-  margin-left: 2em;
 }
 
 .background-table td {
   width: auto;
   border: none !important;
-  padding: 0.5em 0;
+  padding: .25em 0 .25em 1em !important;
 }
 
 .background-table td:nth-child(1) {
@@ -365,9 +379,11 @@ body {
   width: 100%;
 }
 
-.skills-title {
+
+.skills-title,
+.platforms-title {
   float: left;
-  width: 100%;
+  width:100%;
   font-size: 1.25vw;
   font-weight: 400;
   margin: 0;
@@ -375,15 +391,15 @@ body {
 
 .platforms-list-container {
   float: left;
-  min-width: 64.25%;
-  margin: 1em 0 2em 0;
+  min-width:64.5%;
+  margin:.75em 0 2em 0;
   background: #fff;
   border: 1px solid #dee2e6;
 }
 
 .platforms-list {
   float: left;
-  padding: 0.75em 2em 0.75em 1em;
+  padding: 0.75em 2.5em .75em 1em;
   font-size: 0.9vw;
 }
 

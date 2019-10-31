@@ -9,6 +9,7 @@ import git from "../../images/other-skill-logos/git.png";
 import cmd from "../../images/other-skill-logos/cmd.png";
 import tcpip from "../../images/other-skill-logos/tcpip.png";
 import dns from "../../images/other-skill-logos/dns.png";
+import cifs from "../../images/other-skill-logos/cifs.png";
 
 class SkillsTable extends Component {
   constructor(props) {

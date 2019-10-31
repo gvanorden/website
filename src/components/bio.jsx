@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 import photo from "../images/bio-photo.png";
 import Table from "react-bootstrap/Table";
-//import Fade from "react-slideshow-image/lib/components/slideshow/fade";
+import Fade from "react-slideshow-image/lib/components/slideshow/fade";
 import lehighLogo from "../images/lehigh-logo.png";
 import lehigh1 from "../images/lehigh-1.png";
 import lehigh2 from "../images/lehigh-2.png";
 import lehigh3 from "../images/lehigh-3.png";
 
-/*const slideProperties = {
-  duration: 5000,
+const slideProperties = {
+  duration: 3500,
   transitionDuration: 2000,
-  infinite: true,
-  indicators: true,
-  arrows: true
-};*/
+  infinite: true
+};
 
 class Bio extends Component {
   state = {
@@ -23,9 +21,9 @@ class Bio extends Component {
       { id: 3, value: lehigh3 }
     ],
     degrees: [
+      ['YEARS', '2005-2009'],
       ['MAJOR', 'Marketing'],
-      ['MINOR', 'Psychology'],
-      ['YEARS', '2005-2009']
+      ['MINOR', 'Psychology']
     ]
   };
   render() {
@@ -70,22 +68,21 @@ class Bio extends Component {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-
-        {/*<div className="bio-slide-container">
+            <div className="bio-slide-container">
               <Fade {...slideProperties}>
                 {this.state.slideImages.map(slide => (
-                  <div key={slide.id} className="bio-photo-container">
+                  <div key={slide.id} className="slide-photo-container">
                     <img
-                      className="bio-photo"
+                      className="slide-photo"
                       src={slide.value}
                       alt="Lehigh University"
                     />
                   </div>
                 ))}
               </Fade>
-                </div>*/}
+            </div>
+          </div>
+        </div>
         <div className="bio-bottom">
           <div className="background-container">
             <p className="background-title">BACKGROUND</p>

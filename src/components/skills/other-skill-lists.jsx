@@ -9,6 +9,7 @@ import git from "../../images/other-skill-logos/git.png";
 import cmd from "../../images/other-skill-logos/cmd.png";
 import tcpip from "../../images/other-skill-logos/tcpip.png";
 import dns from "../../images/other-skill-logos/dns.png";
+import cifs from "../../images/other-skill-logos/cifs.png";
 
 class OtherSkills extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class OtherSkills extends Component {
         { id: 2, img: cmd, text: "CMD", class: "skills-text" },
         { id: 3, img: tcpip, text: "TCP/IP", class: "skills-text" },
         { id: 4, img: git, text: "GitHub", class: "skills-text" },
-        { id: 5, img: "", text: "", class: "skills-text" },
+        { id: 5, img: cifs, text: "CIFS & NTFS", class: "skills-text" },
         { id: 6, img: "", text: "", class: "skills-text" }
       ]
     };
