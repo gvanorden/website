@@ -27,7 +27,7 @@ class Main extends Component {
       this.setState({ width: "80vw", height: "67.5vh" });
       console.log(window.innerWidth);
     } else {
-      this.setState({ width: "75vw", height: "70vh" });
+      this.setState({ width: "75vw", height: "65vh" });
       console.log(window.innerWidth);
     }
   }

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import photo from "../images/bio-photo.png";
 import Table from "react-bootstrap/Table";
+import ListGroup from "react-bootstrap/ListGroup";
 import Fade from "react-slideshow-image/lib/components/slideshow/fade";
 import lehighLogo from "../images/lehigh-logo.png";
 import lehigh1 from "../images/lehigh-1.png";
@@ -20,19 +21,12 @@ class Bio extends Component {
       { id: 2, value: lehigh2 },
       { id: 3, value: lehigh3 }
     ],
-    degrees: [
-      ["YEARS", "2005-2009"],
-      ["MAJOR", "Marketing"],
-      ["MINOR", "Psychology"]
-    ]
+    degrees: [["MAJOR", "Marketing"], ["MINOR", "Psychology"]]
   };
   render() {
     return (
       <div className="bio">
         <div id="bio-top">
-          <div className="bio-photo-container">
-            <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
-          </div>
           <div className="philo-container">
             <p className="philo-title">PHILOSOPHY</p>
             <p className="philo-text">
@@ -42,6 +36,9 @@ class Bio extends Component {
               replaced by a deeper sense of knowledge and understanding.
             </p>
           </div>
+          {/*<div className="bio-photo-container">
+            <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
+    </div>*/}
           <div className="edu-container">
             <p className="edu-title">EDUCATION</p>
             <div className="edu-text">
@@ -52,23 +49,31 @@ class Bio extends Component {
                   alt="Lehigh Univserity Logo"
                 />
               </div>
-              <div className="degree-table-container">
-                {this.state.degrees.map(degree => (
-                  <Table key={degree[0]} className="degree-table">
+              <div className="edu-degree-container">
+                <div className="degree-table-container">
+                  <Table className="degree-table">
                     <tbody>
                       <tr>
                         <td className="degree-title">
-                          <b>{degree[0]}</b>
+                          <b>YEARS</b>
                         </td>
-                      </tr>
-                      <tr>
-                        <td className="degree-text">
-                          <i>{degree[1]}</i>
-                        </td>
+                        <td className="degree-text">2005-2009</td>
                       </tr>
                     </tbody>
                   </Table>
-                ))}
+                </div>
+                <div className="degree-list-container">
+                  {this.state.degrees.map(degree => (
+                    <ListGroup key={degree[0]} className="degree-list">
+                      <ListGroup.Item className="degree-list-title">
+                        <b>{degree[0]}</b>
+                      </ListGroup.Item>
+                      <ListGroup.Item className="degree-list-text">
+                        {degree[1]}
+                      </ListGroup.Item>
+                    </ListGroup>
+                  ))}
+                </div>
               </div>
               <div className="bio-slide-container">
                 <Fade {...slideProperties}>

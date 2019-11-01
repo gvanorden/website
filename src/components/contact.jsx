@@ -14,7 +14,8 @@ class Contact extends Component {
       <div className="header">
         <p className="logo-text">SOLUTIONS ENGINEER</p>
         <img className="logo-icon" src={logoIcon} alt="VO" />
-        <p className="logo-name">GREGG VAN ORDEN</p>
+        <p className="logo-first-name">GREGG</p>
+        <p className="logo-last-name">VAN ORDEN</p>
         <div className="contact-container">
           <ListGroup className="contact-list">
             <ListGroup.Item>
