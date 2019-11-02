@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import photo from "../images/bio-photo.png";
 import Table from "react-bootstrap/Table";
 import ListGroup from "react-bootstrap/ListGroup";
 import Fade from "react-slideshow-image/lib/components/slideshow/fade";
@@ -21,7 +20,7 @@ class Bio extends Component {
       { id: 2, value: lehigh2 },
       { id: 3, value: lehigh3 }
     ],
-    degrees: [["MAJOR", "Marketing"], ["MINOR", "Psychology"]]
+    degrees: [["MAJOR", "Marketing", "major"], ["MINOR", "Psychology", "minor"]]
   };
   render() {
     return (
@@ -30,15 +29,11 @@ class Bio extends Component {
           <div className="philo-container">
             <p className="philo-title">PHILOSOPHY</p>
             <p className="philo-text">
-              A work ethic must be guided by intellectual honesty and a strong
-              will to self-educate. The mentality built from this ethic should
-              recognize its prevailing state as temporary, existing only to be
-              replaced by a deeper sense of knowledge and understanding.
+              A work ethic must be driven by intellectual honesty and a strong willingness to self-educate.
+              Mentalities derived from such an ethic should recognize prevailing cognitive ceilings as temporary,
+              existing only to be replaced by a deeper sense of knowledge and understanding.
             </p>
           </div>
-          {/*<div className="bio-photo-container">
-            <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
-    </div>*/}
           <div className="edu-container">
             <p className="edu-title">EDUCATION</p>
             <div className="edu-text">
@@ -64,7 +59,7 @@ class Bio extends Component {
                 </div>
                 <div className="degree-list-container">
                   {this.state.degrees.map(degree => (
-                    <ListGroup key={degree[0]} className="degree-list">
+                    <ListGroup key={degree[2]} className={"degree-list " + degree[2]}>
                       <ListGroup.Item className="degree-list-title">
                         <b>{degree[0]}</b>
                       </ListGroup.Item>

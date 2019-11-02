@@ -14,8 +14,11 @@ class Resume extends Component {
   }
 
   setScale() {
-    if (window.innerWidth <= 700) {
-      this.setState({ scale: 0.55 });
+    if (window.innerWidth <= 500) {
+      this.setState({ scale: 0.4 });
+    }
+    else if (window.innerWidth <= 700) {
+      this.setState({ scale: 0.5 });
     }
     else if (window.innerWidth <= 900) {
       this.setState({ scale: 0.75 });

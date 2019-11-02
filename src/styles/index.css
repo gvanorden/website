@@ -58,26 +58,26 @@ body {
 
 .logo-text {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2.5%;
+  left: 1%;
   margin: 0;
-  font-size: 0.81vw;
+  font-size: 0.75vw;
   font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .logo-icon {
   position: absolute;
-  top: 15%;
+  top: 7.5%;
   left: 0;
-  width: 9.1vw;
+  width: 9.75vw;
   height: auto;
 }
 
 .logo-first-name {
   position: absolute;
-  top: 27.5%;
-  left: 9.5vw;
+  top: 25%;
+  left: 10vw;
   margin: 0;
   font-size: 1.35vw;
   font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -86,8 +86,8 @@ body {
 
 .logo-last-name {
   position: absolute;
-  top: 45%;
-  left: 9.5vw;
+  top: 42.5%;
+  left: 10vw;
   margin: 0;
   font-size: 2.25vw;
   font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -96,11 +96,11 @@ body {
 
 .contact-container {
   float: right;
+  width:22.5vw;
 }
 
 .contact-list {
   font-size: 1vw;
-  max-width: 25vw !important;
 }
 
 .contact-image {
@@ -109,7 +109,7 @@ body {
 }
 
 .contact-list > .list-group-item {
-  padding: 0.75em 1em !important;
+  padding: 0.67em 1em !important;
   border-radius: 0 !important;
 }
 
@@ -162,6 +162,7 @@ body {
 
 .tab-title-letter {
   line-height: 1 !important;
+  margin-bottom:.5em !important;
 }
 
 .tab-content {
@@ -226,18 +227,17 @@ body {
 }
 
 .bio-photo-container {
-  float: right;
-  width: 12.5%;
-  margin-right: 1.5em;
+  float:right;
+  width: 9.25%;
+  margin-left: .75em;
+  border: 1px solid #fcfcfc;
 }
 
 .bio-photo {
-  float: left;
+  float: right;
   width: 100%;
   height: auto;
   filter: grayscale(40%);
-  border-radius: 0.25em;
-  margin-top: 0.5em;
 }
 
 .philo-title {
@@ -298,7 +298,7 @@ body {
 
 .slide-photo {
   float: left;
-  width: 10vw;
+  width: 10.75vw;
   margin-top: 1px;
 }
 
@@ -325,9 +325,7 @@ body {
 
 .degree-table {
   float: left;
-  width: auto;
-  margin: 0 0 0.25em 0.25em;
-  min-width: 8vw;
+  margin:0;
   font-size: 1.05vw;
   background: #fff;
   border: 1px solid #dee2e6 !important;
@@ -337,25 +335,41 @@ body {
 td {
   margin: 0 !important;
   border: none !important;
+  text-align:center;
+}
+
+.degree-table td {
+  padding-top:.5em;
+  padding-bottom:.5em 
 }
 
 .degree-title {
-  padding: 0.3em 0.9em 0.15em 1.79em !important;
-}
-
-.degree-text {
-  padding: 0.15em 1.79em 0.3em 0.9em !important;
+  font-weight:1vw;
+  padding-left:1.5em !important;
 }
 
 .degree-list-container {
   float: left;
   width: 100%;
+  margin-top:3%;
+}
+
+.major {
+  margin-right:1.5%;
+}
+
+.minor {
+  margin-left:1.5%;
 }
 
 .degree-list {
   float: left;
-  margin-left: 0.25em;
-  font-size: 1.05vw;
+  width:48.25%;
+  font-size: 1.15vw;
+}
+
+.degree-list > .list-group-item {
+  padding: .25em .5em !important;
 }
 
 .degree-list-title,
@@ -366,11 +380,11 @@ td {
 }
 
 .degree-list-title {
-  padding: 0.4em 1em 0.2em 1em !important;
   border-bottom: none !important;
+  font-weight:bold !important;
+  font-size:1vw;
 }
 .degree-list-text {
-  padding: 0.2em 1em 0.4em 1em !important;
   border-top: none !important;
 }
 
@@ -411,6 +425,7 @@ td {
   width: auto;
   border: none !important;
   padding: 0.25em 0 0.25em 1em;
+  text-align:left !important;
 }
 
 .background-table td:nth-child(1) {
@@ -497,29 +512,49 @@ td {
 .skills-container {
   float: left;
   width: 100%;
+  margin-top:.5em;
 }
 
 .skills-title,
 .platforms-title {
   float: left;
-  width: 100%;
   font-size: 1.25vw;
   font-weight: 400;
   margin: 0;
 }
 
+.skills-title {
+  width:100%;
+}
+
 .platforms-list-container {
   float: left;
-  min-width: 64.5%;
-  margin: 1% 0 3% 0;
-  background: #fff;
-  border: 1px solid #dee2e6;
+  width:85%;
+  margin-bottom:1em;
 }
 
 .platforms-list {
-  float: left;
-  padding: 2% 3%;
-  font-size: 0.9vw;
+  float:left;
+  margin-top:-1em;
+  padding:0 1.5em;
+}
+
+.platforms-list-item {
+  padding:0 1.25em;
+  font-size:1.1vw;
+  border:none !important;
+  background:none !important;
+}
+
+.platforms-image {
+  height: 1.5em;
+  width: auto;
+  margin: auto;
+}
+
+.platforms-text {
+  margin:0;
+  margin-top:.25em;
 }
 
 .skills-list-container {
@@ -530,7 +565,6 @@ td {
 .skills-list-container-one,
 .skills-list-container-two {
   float: left;
-  margin-top: 1em;
   background: #fff;
   border: 1px solid #dee2e6;
 }
@@ -555,8 +589,8 @@ td {
 .skills-list {
   float: left;
   width: 100%;
-  padding: 1em 0 1em 1em;
-  font-size: 0.9vw;
+  padding: 1em 0 1em .9em;
+  font-size: 1vw;
 }
 
 .skills-list-item {
@@ -575,7 +609,7 @@ td {
 }
 
 .skills-text {
-  margin: 0 0 0 0.75em !important;
+  margin: 0 0 0 0.55em !important;
 }
 
 .skills-image-img {

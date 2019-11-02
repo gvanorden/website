@@ -12,16 +12,16 @@ class Platforms extends Component {
 
     this.state = {
       platforms: [
-        { id: 1, img: windows, text: "Windows", class: "platforms-text red" },
         {
           id: 2,
           img: server,
           text: "Windows Server",
-          class: "platforms-text red"
+          class: "skills-text red"
         },
-        { id: 3, img: netapp, text: "NetApp", class: "platforms-text" },
-        { id: 4, img: linux, text: "Linux", class: "platforms-text" },
-        { id: 5, img: mac, text: "Mac", class: "platforms-text" }
+        { id: 1, img: windows, text: "Windows", class: "skills-text red" },
+        { id: 3, img: netapp, text: "NetApp", class: "skills-text" },
+        { id: 4, img: linux, text: "Linux", class: "skills-text" },
+        { id: 5, img: mac, text: "Mac", class: "skills-text" }
       ]
     };
   }
@@ -33,9 +33,9 @@ class Platforms extends Component {
         <div className="platforms-list-container">
           {this.state.platforms.map(skill => (
             <ListGroup key={skill.id} className="platforms-list">
-              <ListGroup.Item className="platforms-list-item">
+              <ListGroup.Item className="skills-list-item">
                 <img
-                  className="platforms-image"
+                  className="skills-image-img"
                   src={skill.img}
                   alt={skill.text}
                 />

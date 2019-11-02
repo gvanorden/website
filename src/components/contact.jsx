@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import logoIcon from "../images/logo-icon.png";
-import logoName from "../images/logo-name.png";
+import photo from "../images/bio-photo.png";
 import phone from "../images/contact-icons/phone.png";
 import email from "../images/contact-icons/email.png";
 import address from "../images/contact-icons/address.png";
@@ -16,6 +16,9 @@ class Contact extends Component {
         <img className="logo-icon" src={logoIcon} alt="VO" />
         <p className="logo-first-name">GREGG</p>
         <p className="logo-last-name">VAN ORDEN</p>
+        <div className="bio-photo-container">
+          <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
+        </div>
         <div className="contact-container">
           <ListGroup className="contact-list">
             <ListGroup.Item>
