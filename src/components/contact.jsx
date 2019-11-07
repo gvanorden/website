@@ -14,11 +14,7 @@ class Contact extends Component {
       <div className="header">
         <p className="logo-text">SOLUTIONS ENGINEER</p>
         <img className="logo-icon" src={logoIcon} alt="VO" />
-        <p className="logo-first-name">GREGG</p>
-        <p className="logo-last-name">VAN ORDEN</p>
-        <div className="bio-photo-container">
-          <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
-        </div>
+        <p className="logo-name">GREGG VAN ORDEN</p>
         <div className="contact-container">
           <ListGroup className="contact-list">
             <ListGroup.Item>
@@ -34,6 +30,9 @@ class Contact extends Component {
               709 Albemarle St. Wyckoff, NJ 07481
             </ListGroup.Item>
           </ListGroup>
+        </div>
+        <div className="bio-photo-container">
+          <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
         </div>
       </div>
     );

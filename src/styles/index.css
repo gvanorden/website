@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 1.25vw;
+  font-size: 1.1vw;
   margin-top: 2em;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .bottom-main {
   height: 100%;
-  margin-top: 0.5em;
+  margin-top: 2em;
 }
 
 /* CONTACT*/
@@ -58,49 +58,39 @@ body {
 
 .logo-text {
   position: absolute;
-  top: 2.5%;
-  left: 1%;
+  top: 12%;
+  left: 7.15vw;
   margin: 0;
-  font-size: 0.75vw;
+  font-size: 0.7vw;
   font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .logo-icon {
   position: absolute;
-  top: 7.5%;
+  top: 0;
   left: 0;
-  width: 9.75vw;
+  width: 7vw;
   height: auto;
 }
 
-.logo-first-name {
+.logo-name {
   position: absolute;
-  top: 25%;
-  left: 10vw;
+  top: 23%;
+  left: 7.1vw;
   margin: 0;
-  font-size: 1.35vw;
-  font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.logo-last-name {
-  position: absolute;
-  top: 42.5%;
-  left: 10vw;
-  margin: 0;
-  font-size: 2.25vw;
+  font-size: 1.65vw;
   font-family: "Kano", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .contact-container {
   float: right;
-  width:22.5vw;
+  width: 22.5vw;
 }
 
 .contact-list {
-  font-size: 1vw;
+  font-size: 0.95vw;
 }
 
 .contact-image {
@@ -109,7 +99,7 @@ body {
 }
 
 .contact-list > .list-group-item {
-  padding: 0.67em 1em !important;
+  padding: 0.65em 1em !important;
   border-radius: 0 !important;
 }
 
@@ -162,7 +152,7 @@ body {
 
 .tab-title-letter {
   line-height: 1 !important;
-  margin-bottom:.5em !important;
+  margin-bottom: 0.5em !important;
 }
 
 .tab-content {
@@ -227,9 +217,9 @@ body {
 }
 
 .bio-photo-container {
-  float:right;
-  width: 9.25%;
-  margin-left: .75em;
+  float: right;
+  width: 6%;
+  margin-right: 0.25em;
   border: 1px solid #fcfcfc;
 }
 
@@ -238,6 +228,7 @@ body {
   width: 100%;
   height: auto;
   filter: grayscale(40%);
+  border-radius: 0.5em;
 }
 
 .philo-title {
@@ -325,7 +316,7 @@ body {
 
 .degree-table {
   float: left;
-  margin:0;
+  margin: 0;
   font-size: 1.05vw;
   background: #fff;
   border: 1px solid #dee2e6 !important;
@@ -335,41 +326,41 @@ body {
 td {
   margin: 0 !important;
   border: none !important;
-  text-align:center;
+  text-align: center;
 }
 
 .degree-table td {
-  padding-top:.5em;
-  padding-bottom:.5em 
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .degree-title {
-  font-weight:1vw;
-  padding-left:1.5em !important;
+  font-weight: 1vw;
+  padding-left: 1.5em !important;
 }
 
 .degree-list-container {
   float: left;
   width: 100%;
-  margin-top:3%;
+  margin-top: 3%;
 }
 
 .major {
-  margin-right:1.5%;
+  margin-right: 1.5%;
 }
 
 .minor {
-  margin-left:1.5%;
+  margin-left: 1.5%;
 }
 
 .degree-list {
   float: left;
-  width:48.25%;
+  width: 48.25%;
   font-size: 1.15vw;
 }
 
 .degree-list > .list-group-item {
-  padding: .25em .5em !important;
+  padding: 0.25em 0.5em !important;
 }
 
 .degree-list-title,
@@ -381,8 +372,8 @@ td {
 
 .degree-list-title {
   border-bottom: none !important;
-  font-weight:bold !important;
-  font-size:1vw;
+  font-weight: bold !important;
+  font-size: 1vw;
 }
 .degree-list-text {
   border-top: none !important;
@@ -425,7 +416,7 @@ td {
   width: auto;
   border: none !important;
   padding: 0.25em 0 0.25em 1em;
-  text-align:left !important;
+  text-align: left !important;
 }
 
 .background-table td:nth-child(1) {
@@ -512,7 +503,7 @@ td {
 .skills-container {
   float: left;
   width: 100%;
-  margin-top:.5em;
+  margin-top: 0.5em;
 }
 
 .skills-title,
@@ -524,26 +515,26 @@ td {
 }
 
 .skills-title {
-  width:100%;
+  width: 100%;
 }
 
 .platforms-list-container {
   float: left;
-  width:85%;
-  margin-bottom:1em;
+  width: 85%;
+  margin-bottom: 1em;
 }
 
 .platforms-list {
-  float:left;
-  margin-top:-1em;
-  padding:0 1.5em;
+  float: left;
+  margin-top: -1em;
+  padding: 0 1.5em;
 }
 
 .platforms-list-item {
-  padding:0 1.25em;
-  font-size:1.1vw;
-  border:none !important;
-  background:none !important;
+  padding: 0 1.25em;
+  font-size: 1.1vw;
+  border: none !important;
+  background: none !important;
 }
 
 .platforms-image {
@@ -553,8 +544,8 @@ td {
 }
 
 .platforms-text {
-  margin:0;
-  margin-top:.25em;
+  margin: 0;
+  margin-top: 0.25em;
 }
 
 .skills-list-container {
@@ -589,7 +580,7 @@ td {
 .skills-list {
   float: left;
   width: 100%;
-  padding: 1em 0 1em .9em;
+  padding: 1em 0 1em 0.9em;
   font-size: 1vw;
 }
 
