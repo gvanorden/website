@@ -31,9 +31,9 @@ class Contact extends Component {
             </ListGroup.Item>
           </ListGroup>
         </div>
-        <div className="bio-photo-container">
+        {/*<div className="bio-photo-container">
           <img className="bio-photo" src={photo} alt="Gregg Van Orden" />
-        </div>
+        </div>*/}
       </div>
     );
   }
